@@ -10,9 +10,10 @@ class WiFiRemoteRx{
         int begin();
         int getChannel(int ch);
         int getConnectionStatus();
+        int getNetworkStatus();
     private:
         HardwareSerial *ser=NULL;
-        long baudrate=9600;
+        long baudrate=115200;
         bool serialEnabled=0;
 };
 

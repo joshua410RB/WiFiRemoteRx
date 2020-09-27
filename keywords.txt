@@ -3,3 +3,4 @@ begin	KEYWORD2
 setBaudRate	KEYWORD2
 getChannel	KEYWORD2
 getConnectionStatus	KEYWORD2
+getNetworkStatus	KEYWORD2

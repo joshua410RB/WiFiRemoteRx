@@ -44,3 +44,14 @@ int WiFiRemoteRx::getConnectionStatus() {
     ser->flush();
     return status;
 }
+
+int WiFiRemoteRx::getNetworkStatus()    {
+    if(!serialEnabled)  {
+        return -1;
+    }
+    ser->write(66);
+    while(!ser->available())    {}
+    int status=ser->read();
+    ser->flush();
+    return status;
+}
